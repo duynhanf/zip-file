@@ -2,10 +2,6 @@ package zipFile
 
 import (
 	"time"
-	// "compress/flate"
-	// "io"
-	// "io/ioutil"
-	// "bytes"
 	"archive/zip"
 	"os"
 )

@@ -12,15 +12,15 @@ func main() {
 	files := []zipFile.FileContent{
 		{
 			Name : "file1.text",
-			Content : "Troi hom nay dep qua",
+			Content : "今日、いい天気ですね。",
 		},
 		{
 			Name : "file2.text",
-			Content : "Ngay mai troi co mua",
+			Content : "明日、雨が降りそうですね。",
 		},
 	}
 
-	err := zipFile.ZipFolder(files, "./dist/output.zip")
+	err := zipFile.ZipFolder(files, "output.zip")
 	if err != nil {
 		fmt.Println("Error when zip file : ", err)
 	}
